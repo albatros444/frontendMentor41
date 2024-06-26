@@ -1,0 +1,114 @@
+.footer {
+  height: 600px;
+  padding: 185px 50px 0 120px;
+  color: $paleCyan;
+  background-color: $darkCyan;
+  .logo {
+    fill: white;
+    margin-bottom: 40px;
+  }
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    .column {
+      font-family: $openSans;
+      //   column 1
+      &:nth-child(1) {
+        width: 364px;
+        font-size: 16px;
+        p {
+          margin-bottom: 30px;
+          margin-left: 50px;
+          &:nth-child(1) {
+            position: relative;
+            line-height: 1.6;
+            &:before {
+              content: url(/images/icon-location.svg);
+              position: absolute;
+              left: -50px;
+              top: 8px;
+            }
+          }
+          &:nth-child(2) {
+            position: relative;
+            &:before {
+              content: url(/images/icon-phone.svg);
+              position: absolute;
+              left: -50px;
+              top: 3px;
+            }
+          }
+          &:nth-child(3) {
+            position: relative;
+            &:before {
+              content: url(/images/icon-email.svg);
+              position: absolute;
+              left: -50px;
+              top: 3px;
+            }
+          }
+        }
+      }
+      //   column 2
+      &:nth-child(2) {
+        width: 106px;
+        a {
+          display: block;
+          margin-bottom: 25px;
+        }
+      }
+      //   column 3
+      &:nth-child(3) {
+        width: 100px;
+        a {
+          display: block;
+          margin-bottom: 25px;
+        }
+      }
+      //   column 4
+      &:nth-child(4) {
+        width: 280px;
+        .socialLinks {
+          display: flex;
+          justify-content: space-between;
+          width: 117px;
+          margin-bottom: 180px;
+          .svgCircle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid white;
+            &:nth-child(1) {
+              svg {
+                height: 22px;
+                width: 22px;
+                fill: white;
+              }
+            }
+            &:nth-child(2) {
+              svg {
+                width: 15px;
+                height: 15px;
+                padding-top: 2px;
+                fill: white;
+              }
+            }
+            &:nth-child(3) {
+              svg {
+                width: 18px;
+                height: 18px;
+                fill: white;
+              }
+            }
+          }
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

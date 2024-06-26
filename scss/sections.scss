@@ -1,0 +1,35 @@
+.sections {
+  padding: 160px 100px;
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 440px;
+    margin-bottom: 40px;
+    padding: 0 40px 0 120px;
+    border-radius: 16px;
+    box-shadow: 0 0px 10px hsl(208, 25%, 90%);
+    .box {
+      padding: 0 160px 0 0;
+      h2 {
+        font-family: $poppins;
+        font-weight: 600;
+        color: $darkCyan;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: $openSans;
+        color: $gray;
+      }
+    }
+    img {
+      height: 70%;
+    }
+    &:nth-child(2) {
+      flex-flow: row-reverse;
+      .box {
+        padding: 0 0 0 160px;
+      }
+    }
+  }
+}
