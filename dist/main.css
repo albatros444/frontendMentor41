@@ -93,6 +93,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 70px;
+  color: hsl(192, 100%, 9%);
 }
 .hero__main__text {
   padding: 90px 70px 30px 0;
@@ -317,6 +318,125 @@ ul {
 }
 .footer__columns .column:nth-child(4) p {
   font-size: 13px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 20px 10px;
+  }
+  .hero {
+    padding: 30px 20px;
+    margin: -30px -10px 40px;
+    background: url(/images/bg-hero-mobile.svg) hsl(193, 100%, 96%);
+  }
+  .hero header {
+    padding: 0 10px 30px;
+  }
+  .hero header img {
+    height: 18px;
+  }
+  .hero header button {
+    width: 100px;
+    height: 25px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .hero__main {
+    display: block;
+    padding: 30px 20px;
+  }
+  .hero__main__text {
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .hero__main__text h1 {
+    width: 100%;
+    font-size: 26px;
+  }
+  .hero__main__text p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .hero__main__text button {
+    width: 80%;
+    height: 40px;
+    font-size: 12px;
+  }
+  .hero img {
+    height: 58vw;
+  }
+  .sections {
+    padding: 10px 0 100px;
+  }
+  .sections .section {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    justify-content: left;
+    height: auto;
+    padding: 0;
+  }
+  .sections .section img {
+    height: 55vw;
+    margin: 50px 0;
+  }
+  .sections .section .box {
+    padding: 0 30px 30px;
+    text-align: center;
+  }
+  .sections .section .box h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .sections .section .box p {
+    font-size: 14px;
+  }
+  .sections .section:nth-child(2) {
+    flex-flow: column-reverse;
+  }
+  .sections .section:nth-child(2) .box {
+    padding: 0 30px 30px;
+  }
+  .cta {
+    width: 100%;
+    height: 176px;
+    margin: 0 auto -70px;
+    padding-top: 50px;
+  }
+  .cta h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .cta button {
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .footer {
+    height: 850px;
+    margin: -30px -10px;
+    padding: 145px 20px 50px;
+  }
+  .footer .logo {
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  .footer__columns {
+    display: block;
+  }
+  .footer__columns .column:nth-child(1) {
+    width: 100%;
+  }
+  .footer__columns .column:nth-child(4) {
+    width: 100%;
+  }
+  .footer__columns .column:nth-child(4) .socialLinks {
+    margin: 0 auto 30px;
+  }
+  .footer__columns .column:nth-child(4) p {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
