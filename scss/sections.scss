@@ -1,34 +1,45 @@
 .sections {
-  padding: 160px 100px;
+  padding: 160px 105px 120px;
   .section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 440px;
     margin-bottom: 40px;
-    padding: 0 40px 0 120px;
+    padding: 0 25px 0 120px;
     border-radius: 16px;
-    box-shadow: 0 0px 10px hsl(208, 25%, 90%);
+    box-shadow: 0 0px 10px hsl(208, 25%, 90%, 80%);
     .box {
       padding: 0 160px 0 0;
       h2 {
         font-family: $poppins;
+        font-size: 28px;
         font-weight: 600;
         color: $darkCyan;
-        margin-bottom: 20px;
+        margin-bottom: 11px;
       }
       p {
+        width: 500px;
         font-family: $openSans;
+        line-height: 1.6;
         color: $gray;
       }
     }
     img {
-      height: 70%;
+      height: 76%;
     }
     &:nth-child(2) {
       flex-flow: row-reverse;
       .box {
         padding: 0 0 0 160px;
+      }
+      img {
+        height: 68%;
+      }
+    }
+    &:nth-child(3) {
+      img {
+        height: 72%;
       }
     }
   }

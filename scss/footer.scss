@@ -1,11 +1,12 @@
 .footer {
-  height: 600px;
-  padding: 185px 50px 0 120px;
+  height: 560px;
+  padding: 190px 50px 0 120px;
   color: $paleCyan;
   background-color: $darkCyan;
   .logo {
     fill: white;
-    margin-bottom: 40px;
+    width: 240px;
+    margin-bottom: 35px;
   }
   &__columns {
     display: flex;
@@ -17,15 +18,15 @@
         width: 364px;
         font-size: 16px;
         p {
-          margin-bottom: 30px;
-          margin-left: 50px;
+          margin-bottom: 25px;
+          margin-left: 40px;
           &:nth-child(1) {
             position: relative;
-            line-height: 1.6;
+            line-height: 1.5;
             &:before {
               content: url(/images/icon-location.svg);
               position: absolute;
-              left: -50px;
+              left: -40px;
               top: 8px;
             }
           }
@@ -34,8 +35,8 @@
             &:before {
               content: url(/images/icon-phone.svg);
               position: absolute;
-              left: -50px;
-              top: 3px;
+              left: -40px;
+              top: 2px;
             }
           }
           &:nth-child(3) {
@@ -43,7 +44,7 @@
             &:before {
               content: url(/images/icon-email.svg);
               position: absolute;
-              left: -50px;
+              left: -40px;
               top: 3px;
             }
           }
@@ -51,23 +52,25 @@
       }
       //   column 2
       &:nth-child(2) {
-        width: 106px;
+        width: 130px;
+        padding-left: 20px;
         a {
           display: block;
-          margin-bottom: 25px;
+          margin-bottom: 20px;
         }
       }
       //   column 3
       &:nth-child(3) {
-        width: 100px;
+        width: 130px;
+        padding-right: 35px;
         a {
           display: block;
-          margin-bottom: 25px;
+          margin-bottom: 20px;
         }
       }
       //   column 4
       &:nth-child(4) {
-        width: 280px;
+        width: 290px;
         .socialLinks {
           display: flex;
           justify-content: space-between;
@@ -106,7 +109,8 @@
           }
         }
         p {
-          font-size: 13px;
+          font-family: $poppins;
+          font-size: 12px;
         }
       }
     }
