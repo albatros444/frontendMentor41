@@ -421,7 +421,7 @@ ul {
     padding: 6.13vw 2.66vw;
   }
   .hero {
-    padding: 30px 4.53vw 2px;
+    padding: 20px 4.53vw 2px;
     margin: -6.13vw -2.66vw 50px;
     background: url(/images/bg-hero-mobile.svg) hsl(193, 100%, 96%);
   }
@@ -464,6 +464,7 @@ ul {
     max-width: 270px;
     height: 40px;
     font-size: 12px;
+    font-weight: 700;
   }
   .hero .mainImg {
     display: block;
